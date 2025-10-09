@@ -24,6 +24,7 @@
                 </fieldset>
             </section>
 
+            <!-- Dados pessoais -->
             <section class="form-section">
                 <fieldset class="form-group">
                     <!-- Legenda para o grupo de itens do formulário -->
@@ -34,8 +35,8 @@
                         required minlength="3" />
 
                     <label for="senha" class="form-label">Senha:</label>
-                    <input type="password" id="nome" name="nome" class="form-input" placeholder="Mínimo de 8 caracteres"
-                        required minlength="8">
+                    <input type="password" id="senha" name="senha" class="form-input"
+                        placeholder="Mínimo de 8 caracteres" required minlength="8">
 
                     <label for="email" class="form-label">E-mail:</label>
                     <input type="email" id="email" name="email" class="form-input" placeholder="exemplo@dominio.com"
@@ -53,8 +54,21 @@
                 </fieldset>
             </section>
 
+
+            <!-- Opções e seleções -->
             <section class="form-section">
                 <fieldset class="form-group">
+
+                    <legend class="form-group-title">Opções e Seleções</legend>
+
+                    <label class="form-label">Qual sua área de atuação</label>
+                    <select name="area" id="area" class="form-select">
+                        <option value="">Selecione uma opção</option>
+                        <option value="Front-end">Front-end</option>
+                        <option value="Back-end">Back-end</option>
+                        <option value="Full-stack">Full-stack</option>
+                        <option value="DevOps">DevOps</option>
+                    </select>
                 </fieldset>
             </section>
 
