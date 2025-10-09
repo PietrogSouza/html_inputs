@@ -62,26 +62,91 @@
                     <legend class="form-group-title">Opções e Seleções</legend>
 
                     <label class="form-label">Qual sua área de atuação</label>
+
                     <select name="area" id="area" class="form-select">
                         <option value="">Selecione uma opção</option>
-                        <option value="Front-end">Front-end</option>
-                        <option value="Back-end">Back-end</option>
-                        <option value="Full-stack">Full-stack</option>
-                        <option value="DevOps">DevOps</option>
+                        <option value="front-end">Front-end</option>
+                        <option value="back-end">Back-end</option>
+                        <option value="full-stack">Full-stack</option>
+                        <option value="devops">DevOps</option>
                     </select>
+
+                    <!---------------------------------Checks------------------------------------>
+                    <p class="form-label">Quais tecnologia você conhece?</p>
+
+                    <div class="form-check">
+                        <input type="checkbox" id="html" name="tecnologia" value="html" checked/>
+                        <label for="html">HTML</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" id="css" name="tecnologia" value="css"/>
+                        <label for="css">CSS</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" id="javascript" name="tecnologia" value="javascript"/>
+                        <label for="javascript">JavaScript</label>
+                    </div>
+
+
+
+                    <!---------------------------------Opções------------------------------------>
+                    <p class="form-label">Qual seu nível de experiência?</p>
+
+                    <div class="form-check">
+                        <input type="radio" id="iniciante" name="experiencia" value="iniciante" checked/>
+                        <label for="iniciante">Iniciante</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" id="intermediário" name="experiencia" value="intermediário"/>
+                        <label for="intermediario">Intermediário</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" id="avançado" name="experiencia" value="avançado"/>
+                        <label for="avancado">Avançado</label>
+                    </div>
+
                 </fieldset>
             </section>
 
+
+            <!-- Valores numéricos e intervalos -->
             <section class="form-section">
                 <fieldset class="form-group">
+                    <legend class="form-group-title">Valores numéricos e intervalos</legend>
+
+                    <label for="idade" class="form-label"></label>
+                    <input type="number" id="idade" name="idade" class="form-input" min="18" max="120" step="1" value="18" />
+
+
+                    <label for="satisfacao" class="form-label"></label>
+                    <input type="range" id="satisfacao" name="satisfacao" class="form-range" min="0" max="100" step="10" value="50" />
+
                 </fieldset>
             </section>
 
+
+            <!-- Data e horas -->
             <section class="form-section">
                 <fieldset class="form-group">
+                    <legend class="form-group-title">Datas e Horas</legend>
+
+                    <label for="data-nascimento" class="form-label">Data de Nascimento:</label>
+                    <input type="date" id="data-nascimento" name="data-nascimento" class="form-input">
+
+                    <label for="hora-evento" class="form-label">Hora do Evento:</label>
+                    <input type="time" id="hora-evento" name="hora-evento" class="form-input">
+
+                    <label for="reuniao" class="form-label">Data e Hora da Reunião:</label>
+                    <input type="datetime-local" id="reuniao" name="reuniao" class="form-input">
                 </fieldset>
             </section>
 
+
+            <!--  -->
             <section class="form-section">
                 <fieldset class="form-group">
                 </fieldset>
