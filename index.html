@@ -18,14 +18,11 @@
         <!-- Indica que será um formulário de envio de dados (servidor) -->
         <form class="input-catalog-form">
 
-            <section class="form-section">
-                <!-- Cria agrupamentos no formulário -->
-                <fieldset class="form-group">
-                </fieldset>
-            </section>
+
 
             <!-- Dados pessoais -->
             <section class="form-section">
+                <!-- Cria agrupamentos no formulário -->
                 <fieldset class="form-group">
                     <!-- Legenda para o grupo de itens do formulário -->
                     <legend class="form-group-title">Dados Pessoais e Texto</legend>
@@ -75,17 +72,17 @@
                     <p class="form-label">Quais tecnologia você conhece?</p>
 
                     <div class="form-check">
-                        <input type="checkbox" id="html" name="tecnologia" value="html" checked/>
+                        <input type="checkbox" id="html" name="tecnologia" value="html" checked />
                         <label for="html">HTML</label>
                     </div>
 
                     <div class="form-check">
-                        <input type="checkbox" id="css" name="tecnologia" value="css"/>
+                        <input type="checkbox" id="css" name="tecnologia" value="css" />
                         <label for="css">CSS</label>
                     </div>
 
                     <div class="form-check">
-                        <input type="checkbox" id="javascript" name="tecnologia" value="javascript"/>
+                        <input type="checkbox" id="javascript" name="tecnologia" value="javascript" />
                         <label for="javascript">JavaScript</label>
                     </div>
 
@@ -95,17 +92,17 @@
                     <p class="form-label">Qual seu nível de experiência?</p>
 
                     <div class="form-check">
-                        <input type="radio" id="iniciante" name="experiencia" value="iniciante" checked/>
+                        <input type="radio" id="iniciante" name="experiencia" value="iniciante" checked />
                         <label for="iniciante">Iniciante</label>
                     </div>
 
                     <div class="form-check">
-                        <input type="radio" id="intermediário" name="experiencia" value="intermediário"/>
+                        <input type="radio" id="intermediário" name="experiencia" value="intermediário" />
                         <label for="intermediario">Intermediário</label>
                     </div>
 
                     <div class="form-check">
-                        <input type="radio" id="avançado" name="experiencia" value="avançado"/>
+                        <input type="radio" id="avançado" name="experiencia" value="avançado" />
                         <label for="avancado">Avançado</label>
                     </div>
 
@@ -119,11 +116,13 @@
                     <legend class="form-group-title">Valores numéricos e intervalos</legend>
 
                     <label for="idade" class="form-label"></label>
-                    <input type="number" id="idade" name="idade" class="form-input" min="18" max="120" step="1" value="18" />
+                    <input type="number" id="idade" name="idade" class="form-input" min="18" max="120" step="1"
+                        value="18" />
 
 
                     <label for="satisfacao" class="form-label"></label>
-                    <input type="range" id="satisfacao" name="satisfacao" class="form-range" min="0" max="100" step="10" value="50" />
+                    <input type="range" id="satisfacao" name="satisfacao" class="form-range" min="0" max="100" step="10"
+                        value="50" />
 
                 </fieldset>
             </section>
@@ -135,20 +134,43 @@
                     <legend class="form-group-title">Datas e Horas</legend>
 
                     <label for="data-nascimento" class="form-label">Data de Nascimento:</label>
-                    <input type="date" id="data-nascimento" name="data-nascimento" class="form-input">
+                    <input type="date" id="data-nascimento" name="data-nascimento" class="form-input" />
 
                     <label for="hora-evento" class="form-label">Hora do Evento:</label>
-                    <input type="time" id="hora-evento" name="hora-evento" class="form-input">
+                    <input type="time" id="hora-evento" name="hora-evento" class="form-input" />
 
                     <label for="reuniao" class="form-label">Data e Hora da Reunião:</label>
-                    <input type="datetime-local" id="reuniao" name="reuniao" class="form-input">
+                    <input type="datetime-local" id="reuniao" name="reuniao" class="form-input" />
                 </fieldset>
             </section>
 
 
-            <!--  -->
+            <!-- Arquivos e cores -->
             <section class="form-section">
                 <fieldset class="form-group">
+                    <legend class="form-group-title">Arquivos e Cores</legend>
+
+                    <label for="cor-favorita" class="form-label">Cor Favorita:</label>
+                    <input type="color" id="cor-favorita" name="cor-favorita" class="form-color-picker"
+                        value="#4a90e2" />
+
+                    <label for="foto-perfil" class="form-label">Foto de Perfil</label>
+                    <input type="file" id="foto-perfil" name="foto-perfil" class="form-file-input"
+                        accept="image/png , image/jpeg" />
+                </fieldset>
+            </section>
+
+
+            <!-- Controle de formulário -->
+            <section class="form-section">
+                <fieldset class="form-group">
+                    <legend class="form-group-title">Controles do Formulário</legend>
+                    <div class="form-controls">]
+                        <input type="submit" value="Enviar Formulário" class="form-button submit-button"/>
+                        <input type="reset" value="Limpar Tudo" class="form-button reset-button"/>
+                        <input type="button" value="Botão Genérico" class="form-button action-button"
+                            onclick="alert('Botão clicado!')"/>
+                    </div>
                 </fieldset>
             </section>
 
